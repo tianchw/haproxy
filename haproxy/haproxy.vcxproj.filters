@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{86e800e2-fe02-4be1-826f-2c234880aba1}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{857fbb59-8b70-4061-a2cf-3781ba852285}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{1cac190a-a2d6-44b3-983e-6f668d12efa3}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{6feba915-7c03-4779-a86b-a5cf8ae3a732}</UniqueIdentifier>
+      <Extensions>vgdbsettings</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="haproxy-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="haproxy-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\acl.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\applet.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\arg.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\auth.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base64.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\buffer.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cfgparse.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\channel.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\checks.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\chunk.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cli.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\compression.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\connection.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dns.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ev_epoll.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ev_poll.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ev_select.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fd.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\filters.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\flt_http_comp.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\flt_spoe.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\flt_trace.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\freq_ctr.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\frontend.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\haproxy.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\haproxy-systemd-wrapper.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hash.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hdr_idx.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\i386-linux-vsys.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lb_chash.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lb_fas.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lb_fwlc.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lb_fwrr.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lb_map.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\listener.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\log.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lru.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mailers.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memory.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\namespace.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pattern.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\payload.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\peers.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pipe.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto_http.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto_tcp.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto_udp.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto_uxst.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocol.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proxy.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\queue.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\raw_sock.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rbtree.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\regex.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sample.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\server.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\session.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shctx.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\signal.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\standard.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stats.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stick_table.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stream.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stream_interface.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\task.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcp_rules.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\time.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\trace.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\uri_auth.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vars.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xxhash.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ebtree\eb32tree.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ebtree\eb64tree.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ebtree\ebimtree.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ebtree\ebistree.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ebtree\ebmbtree.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ebtree\ebpttree.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ebtree\ebsttree.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ebtree\ebtree.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

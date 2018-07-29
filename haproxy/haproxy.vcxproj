@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8420053F-3C4F-4498-8CD8-43F265955C11}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <GNUToolchainPrefix />
+    <GNUCompilerType>GCC</GNUCompilerType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUToolchainPrefix />
+    <GNUCompilerType>GCC</GNUCompilerType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <RemoteBuildHost>172.18.44.97</RemoteBuildHost>
+    <ToolchainID>com.sysprogs.toolchain.default-gcc</ToolchainID>
+    <ToolchainVersion />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <RemoteBuildHost>172.18.44.97</RemoteBuildHost>
+    <ToolchainID>com.sysprogs.toolchain.default-gcc</ToolchainID>
+    <ToolchainVersion />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>include;ebtree;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <LibrarySearchDirectories>;%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>pthread;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LinkerScript />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="haproxy-Debug.vgdbsettings" />
+    <None Include="haproxy-Release.vgdbsettings" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ebtree\eb32tree.c" />
+    <ClCompile Include="ebtree\eb64tree.c" />
+    <ClCompile Include="ebtree\ebimtree.c" />
+    <ClCompile Include="ebtree\ebistree.c" />
+    <ClCompile Include="ebtree\ebmbtree.c" />
+    <ClCompile Include="ebtree\ebpttree.c" />
+    <ClCompile Include="ebtree\ebsttree.c" />
+    <ClCompile Include="ebtree\ebtree.c" />
+    <ClCompile Include="src\acl.c" />
+    <ClCompile Include="src\applet.c" />
+    <ClCompile Include="src\arg.c" />
+    <ClCompile Include="src\auth.c" />
+    <ClCompile Include="src\backend.c" />
+    <ClCompile Include="src\base64.c" />
+    <ClCompile Include="src\buffer.c" />
+    <ClCompile Include="src\cfgparse.c" />
+    <ClCompile Include="src\channel.c" />
+    <ClCompile Include="src\checks.c" />
+    <ClCompile Include="src\chunk.c" />
+    <ClCompile Include="src\cli.c" />
+    <ClCompile Include="src\compression.c" />
+    <ClCompile Include="src\connection.c" />
+    <ClCompile Include="src\dns.c" />
+    <ClCompile Include="src\ev_epoll.c" />
+    <ClCompile Include="src\ev_poll.c" />
+    <ClCompile Include="src\ev_select.c" />
+    <ClCompile Include="src\fd.c" />
+    <ClCompile Include="src\filters.c" />
+    <ClCompile Include="src\flt_http_comp.c" />
+    <ClCompile Include="src\flt_spoe.c" />
+    <ClCompile Include="src\flt_trace.c" />
+    <ClCompile Include="src\freq_ctr.c" />
+    <ClCompile Include="src\frontend.c" />
+    <ClCompile Include="src\haproxy-systemd-wrapper.c" />
+    <ClCompile Include="src\haproxy.c" />
+    <ClCompile Include="src\hash.c" />
+    <ClCompile Include="src\hdr_idx.c" />
+    <ClCompile Include="src\i386-linux-vsys.c" />
+    <ClCompile Include="src\lb_chash.c" />
+    <ClCompile Include="src\lb_fas.c" />
+    <ClCompile Include="src\lb_fwlc.c" />
+    <ClCompile Include="src\lb_fwrr.c" />
+    <ClCompile Include="src\lb_map.c" />
+    <ClCompile Include="src\listener.c" />
+    <ClCompile Include="src\log.c" />
+    <ClCompile Include="src\lru.c" />
+    <ClCompile Include="src\mailers.c" />
+    <ClCompile Include="src\map.c" />
+    <ClCompile Include="src\memory.c" />
+    <ClCompile Include="src\namespace.c" />
+    <ClCompile Include="src\pattern.c" />
+    <ClCompile Include="src\payload.c" />
+    <ClCompile Include="src\peers.c" />
+    <ClCompile Include="src\pipe.c" />
+    <ClCompile Include="src\protocol.c" />
+    <ClCompile Include="src\proto_http.c" />
+    <ClCompile Include="src\proto_tcp.c" />
+    <ClCompile Include="src\proto_udp.c" />
+    <ClCompile Include="src\proto_uxst.c" />
+    <ClCompile Include="src\proxy.c" />
+    <ClCompile Include="src\queue.c" />
+    <ClCompile Include="src\raw_sock.c" />
+    <ClCompile Include="src\rbtree.c" />
+    <ClCompile Include="src\regex.c" />
+    <ClCompile Include="src\sample.c" />
+    <ClCompile Include="src\server.c" />
+    <ClCompile Include="src\session.c" />
+    <ClCompile Include="src\shctx.c" />
+    <ClCompile Include="src\signal.c" />
+    <ClCompile Include="src\standard.c" />
+    <ClCompile Include="src\stats.c" />
+    <ClCompile Include="src\stick_table.c" />
+    <ClCompile Include="src\stream.c" />
+    <ClCompile Include="src\stream_interface.c" />
+    <ClCompile Include="src\task.c" />
+    <ClCompile Include="src\tcp_rules.c" />
+    <ClCompile Include="src\time.c" />
+    <ClCompile Include="src\trace.c" />
+    <ClCompile Include="src\uri_auth.c" />
+    <ClCompile Include="src\vars.c" />
+    <ClCompile Include="src\xxhash.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
