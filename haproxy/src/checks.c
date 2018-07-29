@@ -66,6 +66,9 @@
 #include <proto/dns.h>
 #include <proto/proto_udp.h>
 
+
+
+
 static int httpchk_expect(struct server *s, int done);
 static int tcpcheck_get_step_id(struct check *);
 static char * tcpcheck_get_step_comment(struct check *, int);
