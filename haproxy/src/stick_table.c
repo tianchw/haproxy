@@ -53,6 +53,10 @@ void stksess_free(struct stktable *t, struct stksess *ts)
 	pool_free2(t->pool, (void *)ts - t->data_size);
 }
 
+
+
+
+
 /*
  * Kill an stksess (only if its ref_cnt is zero).
  */
